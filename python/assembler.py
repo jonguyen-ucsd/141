@@ -1,6 +1,7 @@
 import sys
 import re
 
+# ignore comments
 lines = []
 with open(sys.argv[1], 'r') as f:
   for line in f:
