@@ -6,7 +6,7 @@
 module DataMem(
   input              Clk,
                      Reset,
-                     WriteEn,
+                     MemWrite,
   input [7:0]        DataAddress,   // 8-bit-wide pointer to 256-deep memory
                      DataIn,		// 8-bit-wide data path, also
   output logic[7:0]  DataOut);
@@ -32,7 +32,7 @@ module DataMem(
       Core[ 16] <= 254;          // overrides the 0  ***sample only***
       Core[244] <= 5;			 //    likewise
 	end
-    else if(WriteEn) 
+    else if(MemWrite) 
       Core[DataAddress] <= DataIn;
 
 endmodule

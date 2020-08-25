@@ -9,8 +9,8 @@ module ALU(
                      InputB,
   input        [2:0] OP,		         // ALU opcode, part of microcode
   output logic [7:0] Out,		         // or:  output reg [7:0] OUT,
-  output logic       EQUALS,           // output = Equals flag
-  output logic       LT              // Less than Flag
+  output logic       ALU_EQUALS,           // output = Equals flag
+  output logic       ALU_LT              // Less than Flag
   );								    
 	 
   op_mne op_mnemonic;			         // type enum: used for convenient waveform viewing
@@ -30,12 +30,12 @@ module ALU(
   end
 
   always_comb							  // assign Zero = !Out;
-    Zero = 1'b0;
-    LT = 1'b0;
+    ALU_EQUALS = 1'b0;
+    ALU_LT = 1'b0;
     if (Out == 'b0)
-      Zero = 1'b1;
+      ALU_EQUALS = 1'b1;
     else if (Out < 'b0)
-      LT = 1'b1;
+      ALU_LT = 1'b1;
 
   always_comb
     op_mnemonic = op_mne'(OP);			 // displays operation name in waveform viewer
