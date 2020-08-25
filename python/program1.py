@@ -1,4 +1,4 @@
-message = "Mr. Watson, come here, I want my boiled hot dog condoms"
+message = "Mr. Watson, come here. I want to see you."
 dataMem = []
 
 # null fill dataMem

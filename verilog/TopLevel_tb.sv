@@ -48,7 +48,8 @@ initial begin
                   DUT.DM1.Core[6],"_",
                   DUT.DM1.Core[7],
                   DUT.DM1.Core[8]);
-//        $display("instruction = %d %t",DUT.PC,$time);
+            
+  $display("instruction = %d %t",DUT.PC,$time);
   #10ns $stop;			   
 end
 
