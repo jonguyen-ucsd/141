@@ -1,0 +1,88 @@
+C:/Users/gados/141/verilog/Definitions.sv {1 {vlog -work work -sv -stats=none C:/Users/gados/141/verilog/Definitions.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling package definitions
+
+Top level modules:
+	--none--
+
+} {} {}} C:/Users/gados/141/verilog/ALU.sv {1 {vlog -work work -sv -stats=none C:/Users/gados/141/verilog/ALU.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling package ALU_sv_unit
+-- Importing package definitions
+-- Compiling module ALU
+
+Top level modules:
+	ALU
+
+} {} {}} C:/Users/gados/141/verilog/TopLevel.sv {1 {vlog -work work -sv -stats=none C:/Users/gados/141/verilog/TopLevel.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module TopLevel
+
+Top level modules:
+	TopLevel
+
+} {} {}} C:/Users/gados/141/verilog/InstROM.sv {1 {vlog -work work -sv -stats=none C:/Users/gados/141/verilog/InstROM.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module InstROM
+
+Top level modules:
+	InstROM
+
+} {} {}} C:/Users/gados/141/verilog/Ctrl.sv {1 {vlog -work work -sv -stats=none C:/Users/gados/141/verilog/Ctrl.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling package Ctrl_sv_unit
+-- Importing package definitions
+-- Compiling module Ctrl
+
+Top level modules:
+	Ctrl
+
+} {} {}} C:/Users/gados/141/verilog/LUT.sv {1 {vlog -work work -sv -stats=none C:/Users/gados/141/verilog/LUT.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module LUT
+
+Top level modules:
+	LUT
+
+} {} {}} C:/Users/gados/141/verilog/program1_tb.sv {0 {vlog -work work -sv -stats=none C:/Users/gados/141/verilog/program1_tb.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module encrypt_tb
+** Error: (vlog-13069) C:/Users/gados/141/verilog/program1_tb.sv(11): near "output": syntax error, unexpected output, expecting IDENTIFIER or TYPE_IDENTIFIER or NETTYPE_IDENTIFIER.
+** Error (suppressible): C:/Users/gados/141/verilog/program1_tb.sv(22): (vlog-2388) 'reg_write_value' already declared in this scope (encrypt_tb) at C:/Users/gados/141/verilog/program1_tb.sv(18).
+
+} {4.0 5.0} {}} C:/Users/gados/141/verilog/RegFile.sv {1 {vlog -work work -sv -stats=none C:/Users/gados/141/verilog/RegFile.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module RegFile
+
+Top level modules:
+	RegFile
+
+} {} {}} C:/Users/gados/141/verilog/program2_tb.sv {1 {vlog -work work -sv -stats=none C:/Users/gados/141/verilog/program2_tb.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module decrypt_tb
+
+Top level modules:
+	decrypt_tb
+
+} {} {}} C:/Users/gados/141/verilog/InstFetch.sv {1 {vlog -work work -sv -stats=none C:/Users/gados/141/verilog/InstFetch.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module InstFetch
+
+Top level modules:
+	InstFetch
+
+} {} {}} C:/Users/gados/141/verilog/TopLevel_tb.sv {1 {vlog -work work -sv -stats=none C:/Users/gados/141/verilog/TopLevel_tb.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module TopLevel_tb
+
+Top level modules:
+	TopLevel_tb
+
+} {} {}} C:/Users/gados/141/verilog/DataMem.sv {1 {vlog -work work -sv -stats=none C:/Users/gados/141/verilog/DataMem.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module DataMem
+
+Top level modules:
+	DataMem
+
+} {} {}}

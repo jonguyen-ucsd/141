@@ -1,0 +1,353 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/intelFPGA/20.1
+vALU
+Z0 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
+Z1 DXx4 work 11 definitions 0 22 I5`]_A@a?UZJ;7b4N6K]L2
+DXx4 work 11 ALU_sv_unit 0 22 VEQ:J=H]g^G<j;fCnlNgl2
+Z2 !s110 1598397237
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+r1
+!s85 0
+!i10b 1
+!s100 ?U<>I03FUM:jG48@<3=]B3
+IN=Kf_TD:mo?fAOEcDRW@L3
+!s105 ALU_sv_unit
+S1
+Z4 dC:/Users/gados/141/modelsim
+Z5 w1598395006
+Z6 8C:/Users/gados/141/verilog/ALU.sv
+Z7 FC:/Users/gados/141/verilog/ALU.sv
+!i122 8
+L0 7 38
+Z8 OV;L;2020.1;71
+31
+Z9 !s108 1598397237.000000
+Z10 !s107 C:/Users/gados/141/verilog/ALU.sv|
+Z11 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/gados/141/verilog/ALU.sv|
+!i113 1
+Z12 o-work work -sv
+Z13 tCvgOpt 0
+n@a@l@u
+XALU_sv_unit
+R0
+R1
+R2
+VVEQ:J=H]g^G<j;fCnlNgl2
+r1
+!s85 0
+!i10b 1
+!s100 cZN5cCVa;?[f]:`J@UDL=0
+IVEQ:J=H]g^G<j;fCnlNgl2
+!i103 1
+S1
+R4
+R5
+R6
+R7
+!i122 8
+L0 6 0
+R8
+31
+R9
+R10
+R11
+!i113 1
+R12
+R13
+n@a@l@u_sv_unit
+vCtrl
+R0
+R1
+DXx4 work 12 Ctrl_sv_unit 0 22 SYoJAP5O?lk_DP1Ml7jK40
+Z14 !s110 1598397238
+R3
+r1
+!s85 0
+!i10b 1
+!s100 I^fkGXEVila_M@US9LV]U3
+ISXR5GgAJVdclz2dX=9XZ[2
+!s105 Ctrl_sv_unit
+S1
+R4
+Z15 w1598397013
+Z16 8C:/Users/gados/141/verilog/Ctrl.sv
+Z17 FC:/Users/gados/141/verilog/Ctrl.sv
+!i122 9
+L0 6 151
+R8
+31
+R9
+Z18 !s107 C:/Users/gados/141/verilog/Ctrl.sv|
+Z19 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/gados/141/verilog/Ctrl.sv|
+!i113 1
+R12
+R13
+n@ctrl
+XCtrl_sv_unit
+R0
+R1
+R14
+VSYoJAP5O?lk_DP1Ml7jK40
+r1
+!s85 0
+!i10b 1
+!s100 S`FZUOb3?QUl1EfzzQRE22
+ISYoJAP5O?lk_DP1Ml7jK40
+!i103 1
+S1
+R4
+R15
+R16
+R17
+!i122 9
+L0 2 0
+R8
+31
+R9
+R18
+R19
+!i113 1
+R12
+R13
+n@ctrl_sv_unit
+vDataMem
+R0
+R14
+!i10b 1
+!s100 iXk6];jEBHWeifO`0k`T12
+Z20 !s11b Dg1SIo80bB@j0V0VzS_@n1
+Ig9j^KJ>SIZKS<:bE8Q>K73
+R3
+S1
+R4
+Z21 w1598390621
+8C:/Users/gados/141/verilog/DataMem.sv
+FC:/Users/gados/141/verilog/DataMem.sv
+!i122 10
+L0 6 33
+R8
+r1
+!s85 0
+31
+Z22 !s108 1598397238.000000
+!s107 C:/Users/gados/141/verilog/DataMem.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/gados/141/verilog/DataMem.sv|
+!i113 1
+R12
+R13
+n@data@mem
+vdecrypt_tb
+R0
+Z23 !s110 1598397239
+!i10b 1
+!s100 6W@PceB>QV=l]QhZZb=?J2
+R20
+I0EA_f^R<WIVRb82>WK2840
+R3
+S1
+R4
+Z24 w1598391532
+8C:/Users/gados/141/verilog/program2_tb.sv
+FC:/Users/gados/141/verilog/program2_tb.sv
+!i122 15
+L0 5 144
+R8
+r1
+!s85 0
+31
+Z25 !s108 1598397239.000000
+!s107 C:/Users/gados/141/verilog/program2_tb.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/gados/141/verilog/program2_tb.sv|
+!i113 1
+R12
+R13
+Xdefinitions
+R0
+R14
+!i10b 1
+!s100 H[a:AW[_fLMLA<Y9n9VTm2
+R20
+II5`]_A@a?UZJ;7b4N6K]L2
+VI5`]_A@a?UZJ;7b4N6K]L2
+S1
+R4
+w1598394666
+8C:/Users/gados/141/verilog/Definitions.sv
+FC:/Users/gados/141/verilog/Definitions.sv
+!i122 11
+L0 3 0
+R8
+r1
+!s85 0
+31
+R22
+!s107 C:/Users/gados/141/verilog/Definitions.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/gados/141/verilog/Definitions.sv|
+!i113 1
+R12
+R13
+vInstFetch
+R0
+R14
+!i10b 1
+!s100 NKe@<aa<]:<_hO:6DAUdP2
+R20
+IDESNB5X3ZDP_hBQc5ak<P2
+R3
+S1
+R4
+w1598397060
+8C:/Users/gados/141/verilog/InstFetch.sv
+FC:/Users/gados/141/verilog/InstFetch.sv
+!i122 12
+L0 8 24
+R8
+r1
+!s85 0
+31
+R22
+!s107 C:/Users/gados/141/verilog/InstFetch.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/gados/141/verilog/InstFetch.sv|
+!i113 1
+R12
+R13
+n@inst@fetch
+vInstROM
+R0
+R14
+!i10b 1
+!s100 j0Q;l2kkfTUFc;fC@EBMg0
+R20
+IU:<V]^FH3?6f9T3o24>hH0
+R3
+S1
+R4
+w1598390962
+8C:/Users/gados/141/verilog/InstROM.sv
+FC:/Users/gados/141/verilog/InstROM.sv
+!i122 13
+L0 11 35
+R8
+r1
+!s85 0
+31
+R22
+!s107 C:/Users/gados/141/verilog/InstROM.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/gados/141/verilog/InstROM.sv|
+!i113 1
+R12
+R13
+n@inst@r@o@m
+vLUT
+R0
+R23
+!i10b 1
+!s100 NGjafEPm:=Jma<OoShR=83
+R20
+IRG2Q3jK[VGgEgLc:G^L?]3
+R3
+S1
+R4
+R21
+8C:/Users/gados/141/verilog/LUT.sv
+FC:/Users/gados/141/verilog/LUT.sv
+!i122 14
+L0 6 14
+R8
+r1
+!s85 0
+31
+R22
+!s107 C:/Users/gados/141/verilog/LUT.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/gados/141/verilog/LUT.sv|
+!i113 1
+R12
+R13
+n@l@u@t
+vRegFile
+R0
+R23
+!i10b 1
+!s100 YDl7^dIABglV65[K:279`2
+R20
+I>4>[nBAGX?;>7R8S1B`_21
+R3
+S1
+R4
+R21
+8C:/Users/gados/141/verilog/RegFile.sv
+FC:/Users/gados/141/verilog/RegFile.sv
+!i122 16
+L0 10 28
+R8
+r1
+!s85 0
+31
+R25
+!s107 C:/Users/gados/141/verilog/RegFile.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/gados/141/verilog/RegFile.sv|
+!i113 1
+R12
+R13
+n@reg@file
+vTopLevel
+R0
+R23
+!i10b 1
+!s100 :K4Ycoz4L@]aC1iY?9]]C2
+R20
+IO;c>a`:8nBG6lJR?6KUMG3
+R3
+S1
+R4
+w1598397126
+8C:/Users/gados/141/verilog/TopLevel.sv
+FC:/Users/gados/141/verilog/TopLevel.sv
+!i122 17
+L0 6 120
+R8
+r1
+!s85 0
+31
+R25
+!s107 C:/Users/gados/141/verilog/TopLevel.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/gados/141/verilog/TopLevel.sv|
+!i113 1
+R12
+R13
+n@top@level
+vTopLevel_tb
+R0
+R23
+!i10b 1
+!s100 YD>UL_[g<SAhI3[bmfA_e0
+R20
+IbFP1JWabVT36C7CRl[zP90
+R3
+S1
+R4
+R24
+8C:/Users/gados/141/verilog/TopLevel_tb.sv
+FC:/Users/gados/141/verilog/TopLevel_tb.sv
+!i122 18
+L0 8 54
+R8
+r1
+!s85 0
+31
+R25
+!s107 C:/Users/gados/141/verilog/TopLevel_tb.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/gados/141/verilog/TopLevel_tb.sv|
+!i113 1
+R12
+R13
+n@top@level_tb

@@ -10,6 +10,7 @@ module TopLevel(		   // you will have the same 3 ports
     output logic Ack	   // done flag from DUT
 		);
 
+	wire [2:0] ALU_op;
 	wire [ 9:0] PgmCtr,        // program counter
 							PCTarg;
 	wire [ 8:0] Instruction;   // our 9-bit opcode
@@ -18,14 +19,12 @@ module TopLevel(		   // you will have the same 3 ports
 	wire [ 7:0] mem_addr;
 	// wire [ 7:0] InA, InB, 	   // ALU operand inputs
 	wire [7:0]  ALU_out;       // ALU result
-	wire [ 7:0] reg_write_value, // data in to reg file
-							mem_write_value, // data in to data_memory
+	wire [ 7:0] mem_write_value, // data in to data_memory
 							mem_read_value;  // data out from data_memory
 	wire        RegWrite,    // reg_file write enable
 							MemWrite,	   // data_memory write enable
-							MemRead,	   // data_memory read enable
-							EQUALS,		     // ALU output = 0 flag
-							LT,						 // ALU output less than flag
+							ALU_equals,		     // ALU output = 0 flag
+							ALU_lt,						 // ALU output less than flag
 							Jump,	       // to program counter: jump 
 							BranchEn;	   // to program counter: branch enable
 	logic[15:0] CycleCt;	   // standalone; NOT PC!
@@ -38,17 +37,32 @@ module TopLevel(		   // you will have the same 3 ports
 		.Clk         (Clk     ) ,  // (Clk) is required in Verilog, optional in SystemVerilog
 		.BranchAbs   (Jump    ) ,  // jump enable
 		.BranchRelEn (BranchEn) ,  // branch enable
-		.ALU_flag	 	 (Zero    ) ,
-		.ALU_flag    (LT) ,
+		.ALU_equals	 	 (ALU_equals    ) ,
+		.ALU_lt    (ALU_lt) ,
 		.Target      (PCTarg  ) ,
 		.ProgCtr     (PgmCtr  )	   // program count = index to instruction memory
 	);					  
 
 	// Control decoder
   Ctrl Ctrl1 (
-		.Instruction  (Instruction), // from instr_ROM
-		.Jump         (Jump),		     // to PC
-		.BranchEn     (BranchEn)		 // to PC
+		.Instruction  		(Instruction), // from instr_ROM
+		.ALU_equals   		(ALU_equals),
+		.ALU_lt       		(ALU_lt),
+		.mem_read_value 	(mem_read_value),
+		.mem_addr 			(mem_addr),
+		.mem_write_value 	(mem_write_value),
+		.ALU_op 			(ALU_op),
+		.reg_A_addr   		(reg_A_addr),
+		.reg_B_addr   		(reg_B_addr),
+		.reg_write_addr   	(reg_write_addr),
+		.reg_A_value  		(reg_A_value),
+		.reg_B_value 		(reg_B_value),
+		.reg_write_value    (reg_write_value),
+		.Jump         		(Jump),		     // to PC
+		.BranchEn     		(BranchEn),		 // to PC
+		.BranchAccept 		(BranchAccept),
+		.RegWrite 			(RegWrite),
+		.MemWrite 			(MemWrite)
   );
 	// instruction ROM
   InstROM #(.W(9)) IR1(
@@ -86,15 +100,15 @@ module TopLevel(		   // you will have the same 3 ports
   ALU ALU1  (
 	  .InputA     (reg_A_value),
 	  .InputB     (reg_B_value), 
-	  .OP         (ALU_OP),
+	  .OP         (ALU_op),
 	  .Out        (ALU_out),
-	  .ALU_EQUALS (ALU_EQUALS),
-		.ALU_LT     (ALU_LT)
+	  .ALU_equals (ALU_equals),
+		.ALU_lt     (ALU_lt)
 	);
   
 	DataMem DM1(
 		.DataAddress  (mem_addr), 
-		.WriteEn      (MemWrite), 
+		.MemWrite      (MemWrite), 
 		.DataIn       (mem_write_value), 
 		.DataOut      (mem_read_value), 
 		.Clk 		  		     ,
