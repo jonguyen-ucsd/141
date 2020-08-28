@@ -48,21 +48,22 @@ module TopLevel(		   // you will have the same 3 ports
 		.Instruction  		(Instruction), // from instr_ROM
 		.ALU_equals   		(ALU_equals),
 		.ALU_lt       		(ALU_lt),
+		.ALU_out					(ALU_out),
 		.mem_read_value 	(mem_read_value),
-		.mem_addr 			(mem_addr),
+		.mem_addr 			  (mem_addr),
 		.mem_write_value 	(mem_write_value),
-		.ALU_op 			(ALU_op),
+		.ALU_op 			    (ALU_op),
 		.reg_A_addr   		(reg_A_addr),
 		.reg_B_addr   		(reg_B_addr),
-		.reg_write_addr   	(reg_write_addr),
+		.reg_write_addr   (reg_write_addr),
 		.reg_A_value  		(reg_A_value),
-		.reg_B_value 		(reg_B_value),
-		.reg_write_value    (reg_write_value),
+		.reg_B_value 		  (reg_B_value),
+		.reg_write_value  (reg_write_value),
 		.Jump         		(Jump),		     // to PC
 		.BranchEn     		(BranchEn),		 // to PC
 		.BranchAccept 		(BranchAccept),
-		.RegWrite 			(RegWrite),
-		.MemWrite 			(MemWrite)
+		.RegWrite 			  (RegWrite),
+		.MemWrite 			  (MemWrite)
   );
 	// instruction ROM
   InstROM #(.W(9)) IR1(
@@ -74,7 +75,7 @@ module TopLevel(		   // you will have the same 3 ports
 
   assign Ack = &Instruction;
 	// reg file
-	RegFile #(.W(8),.D(3)) RF1 (
+	RegFile #(.W(8),.D(4)) RF1 (
 		.Clk    				  ,
 		.WriteEn   (RegWrite), 
 		.RaddrA    (reg_A_addr),         //concatenate with 0 to give us 4 bits

@@ -24,8 +24,8 @@ module TopLevel_tb;	     // Lab 17
 	);
 
 initial begin
-  #10ns Init = 'b0;
   #10ns Req  = 'b1;
+  #10ns Init = 'b0;
 // Initialize DUT's data memory
   #10ns for(int i=0; i<256; i++) begin
     DUT.DM1.Core[i] = 8'h0;	     // clear data_mem
@@ -43,14 +43,14 @@ initial begin
 // launch prodvgram in DUT
   #10ns Req = 0;
 // Wait for done flag, then display results
-  wait (Ack);
-  #10ns $displayh(DUT.DM1.Core[5],
-                  DUT.DM1.Core[6],"_",
-                  DUT.DM1.Core[7],
-                  DUT.DM1.Core[8]);
-            
-  $display("instruction = %d %t",DUT.PC,$time);
-  #10ns $stop;			   
+  // #10ns $displayh(DUT.DM1.Core[5],
+  //                 DUT.DM1.Core[6],"_",
+  //                 DUT.DM1.Core[7],
+  //                 DUT.DM1.Core[8]);
+  #1000ns	
+  $display("Expected = %d", 32);
+  $display("Actual = %d", DUT.RF1.Registers[1]);
+  $stop;		   
 end
 
 always begin   // clock period = 10 Verilog time units

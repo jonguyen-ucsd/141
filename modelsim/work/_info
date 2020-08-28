@@ -10,344 +10,327 @@ z2
 cModel Technology
 dC:/intelFPGA/20.1
 vALU
-Z0 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
-Z1 DXx4 work 11 definitions 0 22 I5`]_A@a?UZJ;7b4N6K]L2
-DXx4 work 11 ALU_sv_unit 0 22 VEQ:J=H]g^G<j;fCnlNgl2
-Z2 !s110 1598397237
-Z3 VDg1SIo80bB@j0V0VzS_@n1
+Z0 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+Z1 DXx4 work 11 definitions 0 22 c1=50A8Rm7YiM_W:i5iXI2
+DXx4 work 11 ALU_sv_unit 0 22 Me_[eCQ59cijdNjlH<o=K1
+Z2 VDg1SIo80bB@j0V0VzS_@n1
 r1
 !s85 0
+31
 !i10b 1
-!s100 ?U<>I03FUM:jG48@<3=]B3
-IN=Kf_TD:mo?fAOEcDRW@L3
+!s100 dB`S_1i4WVkE41^;XVHSb0
+Ii`A<MHM[LR7a1e<RDD]dO0
 !s105 ALU_sv_unit
 S1
-Z4 dC:/Users/gados/141/modelsim
-Z5 w1598395006
-Z6 8C:/Users/gados/141/verilog/ALU.sv
-Z7 FC:/Users/gados/141/verilog/ALU.sv
-!i122 8
-L0 7 38
-Z8 OV;L;2020.1;71
-31
-Z9 !s108 1598397237.000000
-Z10 !s107 C:/Users/gados/141/verilog/ALU.sv|
-Z11 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/gados/141/verilog/ALU.sv|
+Z3 dC:/Users/jnvie/Documents/GitHub/141/modelsim
+Z4 w1598482000
+Z5 8C:/Users/jnvie/Documents/GitHub/141/verilog/ALU.sv
+Z6 FC:/Users/jnvie/Documents/GitHub/141/verilog/ALU.sv
+L0 7
+Z7 OV;L;10.5b;63
+Z8 !s108 1598573579.000000
+Z9 !s107 C:/Users/jnvie/Documents/GitHub/141/verilog/ALU.sv|
+Z10 !s90 -reportprogress|300|-work|work|C:/Users/jnvie/Documents/GitHub/141/verilog/ALU.sv|
 !i113 1
-Z12 o-work work -sv
-Z13 tCvgOpt 0
+Z11 o-work work
+Z12 tCvgOpt 0
 n@a@l@u
 XALU_sv_unit
 R0
 R1
-R2
-VVEQ:J=H]g^G<j;fCnlNgl2
+VMe_[eCQ59cijdNjlH<o=K1
 r1
 !s85 0
+31
 !i10b 1
-!s100 cZN5cCVa;?[f]:`J@UDL=0
-IVEQ:J=H]g^G<j;fCnlNgl2
+!s100 cM57cH<W]BaU`WoZ_>^z<3
+IMe_[eCQ59cijdNjlH<o=K1
 !i103 1
 S1
+R3
 R4
 R5
 R6
+L0 6
 R7
-!i122 8
-L0 6 0
 R8
-31
 R9
 R10
-R11
 !i113 1
+R11
 R12
-R13
 n@a@l@u_sv_unit
 vCtrl
 R0
 R1
-DXx4 work 12 Ctrl_sv_unit 0 22 SYoJAP5O?lk_DP1Ml7jK40
-Z14 !s110 1598397238
-R3
+DXx4 work 12 Ctrl_sv_unit 0 22 k[<4Wo[<Uz[:]7LaU:dSV3
+R2
 r1
 !s85 0
+31
 !i10b 1
-!s100 I^fkGXEVila_M@US9LV]U3
-ISXR5GgAJVdclz2dX=9XZ[2
+!s100 ghI6dINH0z1mCZ:3WG:a^2
+IXFRYJan_2G>m7QMJGRcaJ0
 !s105 Ctrl_sv_unit
 S1
-R4
-Z15 w1598397013
-Z16 8C:/Users/gados/141/verilog/Ctrl.sv
-Z17 FC:/Users/gados/141/verilog/Ctrl.sv
-!i122 9
-L0 6 151
+R3
+Z13 w1598572339
+Z14 8C:/Users/jnvie/Documents/GitHub/141/verilog/Ctrl.sv
+Z15 FC:/Users/jnvie/Documents/GitHub/141/verilog/Ctrl.sv
+L0 6
+R7
 R8
-31
-R9
-Z18 !s107 C:/Users/gados/141/verilog/Ctrl.sv|
-Z19 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/gados/141/verilog/Ctrl.sv|
+Z16 !s107 C:/Users/jnvie/Documents/GitHub/141/verilog/Ctrl.sv|
+Z17 !s90 -reportprogress|300|-work|work|C:/Users/jnvie/Documents/GitHub/141/verilog/Ctrl.sv|
 !i113 1
+R11
 R12
-R13
 n@ctrl
 XCtrl_sv_unit
 R0
 R1
-R14
-VSYoJAP5O?lk_DP1Ml7jK40
+Vk[<4Wo[<Uz[:]7LaU:dSV3
 r1
 !s85 0
+31
 !i10b 1
-!s100 S`FZUOb3?QUl1EfzzQRE22
-ISYoJAP5O?lk_DP1Ml7jK40
+!s100 SJa0Go:?^^z6OdJ?:EFaP1
+Ik[<4Wo[<Uz[:]7LaU:dSV3
 !i103 1
 S1
-R4
+R3
+R13
+R14
 R15
+L0 2
+R7
+R8
 R16
 R17
-!i122 9
-L0 2 0
-R8
-31
-R9
-R18
-R19
 !i113 1
+R11
 R12
-R13
 n@ctrl_sv_unit
 vDataMem
 R0
-R14
+Z18 !s110 1598573579
 !i10b 1
-!s100 iXk6];jEBHWeifO`0k`T12
-Z20 !s11b Dg1SIo80bB@j0V0VzS_@n1
-Ig9j^KJ>SIZKS<:bE8Q>K73
-R3
+!s100 ml2hUFL]iXLPP<?6XKN[<2
+I72WcS7Yz7Xd]AZ=KGTcKW0
+R2
+!s105 DataMem_sv_unit
 S1
-R4
-Z21 w1598390621
-8C:/Users/gados/141/verilog/DataMem.sv
-FC:/Users/gados/141/verilog/DataMem.sv
-!i122 10
-L0 6 33
-R8
+R3
+w1598238268
+8C:/Users/jnvie/Documents/GitHub/141/verilog/DataMem.sv
+FC:/Users/jnvie/Documents/GitHub/141/verilog/DataMem.sv
+L0 6
+R7
 r1
 !s85 0
 31
-Z22 !s108 1598397238.000000
-!s107 C:/Users/gados/141/verilog/DataMem.sv|
-!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/gados/141/verilog/DataMem.sv|
+R8
+!s107 C:/Users/jnvie/Documents/GitHub/141/verilog/DataMem.sv|
+!s90 -reportprogress|300|-work|work|C:/Users/jnvie/Documents/GitHub/141/verilog/DataMem.sv|
 !i113 1
+R11
 R12
-R13
 n@data@mem
 vdecrypt_tb
-R0
-Z23 !s110 1598397239
+DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
+!s110 1598397239
 !i10b 1
 !s100 6W@PceB>QV=l]QhZZb=?J2
-R20
+!s11b Dg1SIo80bB@j0V0VzS_@n1
 I0EA_f^R<WIVRb82>WK2840
-R3
+R2
 S1
-R4
-Z24 w1598391532
+dC:/Users/gados/141/modelsim
+w1598391532
 8C:/Users/gados/141/verilog/program2_tb.sv
 FC:/Users/gados/141/verilog/program2_tb.sv
 !i122 15
 L0 5 144
-R8
+OV;L;2020.1;71
 r1
 !s85 0
 31
-Z25 !s108 1598397239.000000
+!s108 1598397239.000000
 !s107 C:/Users/gados/141/verilog/program2_tb.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/gados/141/verilog/program2_tb.sv|
 !i113 1
+o-work work -sv
 R12
-R13
 Xdefinitions
 R0
-R14
+R18
 !i10b 1
-!s100 H[a:AW[_fLMLA<Y9n9VTm2
-R20
-II5`]_A@a?UZJ;7b4N6K]L2
-VI5`]_A@a?UZJ;7b4N6K]L2
+!s100 Hk9ll97nfBjWUz[iAzIF=3
+Ic1=50A8Rm7YiM_W:i5iXI2
+Vc1=50A8Rm7YiM_W:i5iXI2
 S1
-R4
-w1598394666
-8C:/Users/gados/141/verilog/Definitions.sv
-FC:/Users/gados/141/verilog/Definitions.sv
-!i122 11
-L0 3 0
-R8
+R3
+w1598235218
+8C:/Users/jnvie/Documents/GitHub/141/verilog/Definitions.sv
+FC:/Users/jnvie/Documents/GitHub/141/verilog/Definitions.sv
+L0 3
+R7
 r1
 !s85 0
 31
-R22
-!s107 C:/Users/gados/141/verilog/Definitions.sv|
-!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/gados/141/verilog/Definitions.sv|
+R8
+!s107 C:/Users/jnvie/Documents/GitHub/141/verilog/Definitions.sv|
+!s90 -reportprogress|300|-work|work|C:/Users/jnvie/Documents/GitHub/141/verilog/Definitions.sv|
 !i113 1
+R11
 R12
-R13
 vInstFetch
 R0
-R14
+R18
 !i10b 1
-!s100 NKe@<aa<]:<_hO:6DAUdP2
-R20
-IDESNB5X3ZDP_hBQc5ak<P2
-R3
+!s100 H0lXd_mdMo<B>ZIg3m^[:3
+I3?FCESG[];^nBXH?cQ^GO1
+R2
+!s105 InstFetch_sv_unit
 S1
+R3
 R4
-w1598397060
-8C:/Users/gados/141/verilog/InstFetch.sv
-FC:/Users/gados/141/verilog/InstFetch.sv
-!i122 12
-L0 8 24
-R8
+8C:/Users/jnvie/Documents/GitHub/141/verilog/InstFetch.sv
+FC:/Users/jnvie/Documents/GitHub/141/verilog/InstFetch.sv
+L0 8
+R7
 r1
 !s85 0
 31
-R22
-!s107 C:/Users/gados/141/verilog/InstFetch.sv|
-!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/gados/141/verilog/InstFetch.sv|
+R8
+!s107 C:/Users/jnvie/Documents/GitHub/141/verilog/InstFetch.sv|
+!s90 -reportprogress|300|-work|work|C:/Users/jnvie/Documents/GitHub/141/verilog/InstFetch.sv|
 !i113 1
+R11
 R12
-R13
 n@inst@fetch
 vInstROM
 R0
-R14
+R18
 !i10b 1
-!s100 j0Q;l2kkfTUFc;fC@EBMg0
-R20
-IU:<V]^FH3?6f9T3o24>hH0
-R3
+!s100 OGXCW1I5k@U^LGc1VGZzh0
+InCUf5[LOZlMCTZ7K^WHEY3
+R2
+!s105 InstROM_sv_unit
 S1
-R4
-w1598390962
-8C:/Users/gados/141/verilog/InstROM.sv
-FC:/Users/gados/141/verilog/InstROM.sv
-!i122 13
-L0 11 35
-R8
+R3
+w1598571798
+8C:/Users/jnvie/Documents/GitHub/141/verilog/InstROM.sv
+FC:/Users/jnvie/Documents/GitHub/141/verilog/InstROM.sv
+L0 11
+R7
 r1
 !s85 0
 31
-R22
-!s107 C:/Users/gados/141/verilog/InstROM.sv|
-!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/gados/141/verilog/InstROM.sv|
+R8
+!s107 C:/Users/jnvie/Documents/GitHub/141/verilog/InstROM.sv|
+!s90 -reportprogress|300|-work|work|C:/Users/jnvie/Documents/GitHub/141/verilog/InstROM.sv|
 !i113 1
+R11
 R12
-R13
 n@inst@r@o@m
 vLUT
 R0
-R23
+R18
 !i10b 1
-!s100 NGjafEPm:=Jma<OoShR=83
-R20
-IRG2Q3jK[VGgEgLc:G^L?]3
-R3
+!s100 fncjm;7Z:@4E=9;I2Ki1z3
+IO7ZeEl>Zk3lTPE2@zRZ<^0
+R2
+!s105 LUT_sv_unit
 S1
-R4
-R21
-8C:/Users/gados/141/verilog/LUT.sv
-FC:/Users/gados/141/verilog/LUT.sv
-!i122 14
-L0 6 14
-R8
+R3
+Z19 w1597804478
+8C:/Users/jnvie/Documents/GitHub/141/verilog/LUT.sv
+FC:/Users/jnvie/Documents/GitHub/141/verilog/LUT.sv
+L0 6
+R7
 r1
 !s85 0
 31
-R22
-!s107 C:/Users/gados/141/verilog/LUT.sv|
-!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/gados/141/verilog/LUT.sv|
+R8
+!s107 C:/Users/jnvie/Documents/GitHub/141/verilog/LUT.sv|
+!s90 -reportprogress|300|-work|work|C:/Users/jnvie/Documents/GitHub/141/verilog/LUT.sv|
 !i113 1
+R11
 R12
-R13
 n@l@u@t
 vRegFile
 R0
-R23
+Z20 !s110 1598573580
 !i10b 1
-!s100 YDl7^dIABglV65[K:279`2
-R20
-I>4>[nBAGX?;>7R8S1B`_21
-R3
+!s100 zFC;N`jFi=`DZk[BhJe;e2
+IEMKhjEf^PTgeg<B?fHS]G2
+R2
+!s105 RegFile_sv_unit
 S1
-R4
-R21
-8C:/Users/gados/141/verilog/RegFile.sv
-FC:/Users/gados/141/verilog/RegFile.sv
-!i122 16
-L0 10 28
-R8
+R3
+R19
+8C:/Users/jnvie/Documents/GitHub/141/verilog/RegFile.sv
+FC:/Users/jnvie/Documents/GitHub/141/verilog/RegFile.sv
+L0 10
+R7
 r1
 !s85 0
 31
-R25
-!s107 C:/Users/gados/141/verilog/RegFile.sv|
-!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/gados/141/verilog/RegFile.sv|
+R8
+!s107 C:/Users/jnvie/Documents/GitHub/141/verilog/RegFile.sv|
+!s90 -reportprogress|300|-work|work|C:/Users/jnvie/Documents/GitHub/141/verilog/RegFile.sv|
 !i113 1
+R11
 R12
-R13
 n@reg@file
 vTopLevel
 R0
-R23
-!i10b 1
-!s100 :K4Ycoz4L@]aC1iY?9]]C2
 R20
-IO;c>a`:8nBG6lJR?6KUMG3
-R3
+!i10b 1
+!s100 XKWRd^4@6fjilzDKzW2`d0
+INo5@ZOYSRKYih@;YK<_]A1
+R2
+!s105 TopLevel_sv_unit
 S1
-R4
-w1598397126
-8C:/Users/gados/141/verilog/TopLevel.sv
-FC:/Users/gados/141/verilog/TopLevel.sv
-!i122 17
-L0 6 120
-R8
+R3
+w1598572217
+8C:/Users/jnvie/Documents/GitHub/141/verilog/TopLevel.sv
+FC:/Users/jnvie/Documents/GitHub/141/verilog/TopLevel.sv
+L0 6
+R7
 r1
 !s85 0
 31
-R25
-!s107 C:/Users/gados/141/verilog/TopLevel.sv|
-!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/gados/141/verilog/TopLevel.sv|
+Z21 !s108 1598573580.000000
+!s107 C:/Users/jnvie/Documents/GitHub/141/verilog/TopLevel.sv|
+!s90 -reportprogress|300|-work|work|C:/Users/jnvie/Documents/GitHub/141/verilog/TopLevel.sv|
 !i113 1
+R11
 R12
-R13
 n@top@level
 vTopLevel_tb
 R0
-R23
-!i10b 1
-!s100 YD>UL_[g<SAhI3[bmfA_e0
 R20
-IbFP1JWabVT36C7CRl[zP90
-R3
+!i10b 1
+!s100 17mM?hh;BXa@nc=:`[mk10
+Ii:GY0f=cRzH;EJeN5Lc1f1
+R2
+!s105 TopLevel_tb_sv_unit
 S1
-R4
-R24
-8C:/Users/gados/141/verilog/TopLevel_tb.sv
-FC:/Users/gados/141/verilog/TopLevel_tb.sv
-!i122 18
-L0 8 54
-R8
+R3
+w1598571333
+8C:/Users/jnvie/Documents/GitHub/141/verilog/TopLevel_tb.sv
+FC:/Users/jnvie/Documents/GitHub/141/verilog/TopLevel_tb.sv
+L0 8
+R7
 r1
 !s85 0
 31
-R25
-!s107 C:/Users/gados/141/verilog/TopLevel_tb.sv|
-!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/gados/141/verilog/TopLevel_tb.sv|
+R21
+!s107 C:/Users/jnvie/Documents/GitHub/141/verilog/TopLevel_tb.sv|
+!s90 -reportprogress|300|-work|work|C:/Users/jnvie/Documents/GitHub/141/verilog/TopLevel_tb.sv|
 !i113 1
+R11
 R12
-R13
 n@top@level_tb

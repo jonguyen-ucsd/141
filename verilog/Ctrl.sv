@@ -6,6 +6,7 @@ import definitions::*;
 module Ctrl (
   input [8:0] Instruction,	   // machine code
   input ALU_equals, ALU_lt,
+  input [7:0] ALU_out,
 
   input [7:0] mem_read_value,
   output logic[7:0] mem_addr,
@@ -88,10 +89,10 @@ always_comb begin
       case (m_opcode)
         mcLDR: begin
           // Fetch operands from reg file
-          RegWrite = 1; // control signal for register writing
           reg_A_addr = Instruction[3:0]; // r0-15
 
           // Write back to reg file
+          RegWrite = 1; // control signal for register writing
           reg_write_addr = Instruction[4]; // either r0 or r1
           reg_write_value = mem_read_value;
         end
@@ -116,9 +117,14 @@ always_comb begin
     end
     
     R_Type: begin
+      // set operands to be r0 and r1
       reg_A_addr = 0;
       reg_B_addr = 1;
+
+      // Write value back to reg file
+      RegWrite = 1;
       reg_write_addr = Instruction[3:0];
+      reg_write_value = ALU_out;
     end
     
     B_Type: begin

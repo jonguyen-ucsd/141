@@ -1,6 +1,6 @@
 Analysis & Synthesis report for TopLevel
-Tue Aug 25 16:12:21 2020
-Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
+Wed Aug 26 15:53:03 2020
+Quartus Prime Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
 
 
 ---------------------
@@ -28,7 +28,7 @@ Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 ----------------
 ; Legal Notice ;
 ----------------
-Copyright (C) 2020  Intel Corporation. All rights reserved.
+Copyright (C) 2019  Intel Corporation. All rights reserved.
 Your use of Intel Corporation's design tools, logic functions 
 and other software and tools, and any partner logic 
 functions, and any output files from any of the foregoing 
@@ -48,8 +48,8 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Tue Aug 25 16:12:21 2020       ;
-; Quartus Prime Version           ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
+; Analysis & Synthesis Status     ; Successful - Wed Aug 26 15:53:03 2020       ;
+; Quartus Prime Version           ; 19.1.0 Build 670 09/22/2019 SJ Lite Edition ;
 ; Revision Name                   ; TopLevel                                    ;
 ; Top-level Entity Name           ; TopLevel                                    ;
 ; Family                          ; Cyclone V                                   ;
@@ -160,8 +160,8 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 12          ;
-; Maximum allowed            ; 6           ;
+; Number detected on machine ; 8           ;
+; Maximum allowed            ; 4           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
 ; Maximum used               ; 1           ;
@@ -171,21 +171,21 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                           ;
-+-------------------------------------------+-----------------+------------------------------+-------------------------------------------+---------+
-; File Name with User-Entered Path          ; Used in Netlist ; File Type                    ; File Name with Absolute Path              ; Library ;
-+-------------------------------------------+-----------------+------------------------------+-------------------------------------------+---------+
-; ../verilog/TopLevel.sv                    ; yes             ; User SystemVerilog HDL File  ; C:/Users/gados/141/verilog/TopLevel.sv    ;         ;
-; ../verilog/RegFile.sv                     ; yes             ; User SystemVerilog HDL File  ; C:/Users/gados/141/verilog/RegFile.sv     ;         ;
-; ../verilog/InstROM.sv                     ; yes             ; User SystemVerilog HDL File  ; C:/Users/gados/141/verilog/InstROM.sv     ;         ;
-; ../verilog/InstFetch.sv                   ; yes             ; User SystemVerilog HDL File  ; C:/Users/gados/141/verilog/InstFetch.sv   ;         ;
-; ../verilog/Definitions.sv                 ; yes             ; User SystemVerilog HDL File  ; C:/Users/gados/141/verilog/Definitions.sv ;         ;
-; ../verilog/DataMem.sv                     ; yes             ; User SystemVerilog HDL File  ; C:/Users/gados/141/verilog/DataMem.sv     ;         ;
-; ../verilog/Ctrl.sv                        ; yes             ; User SystemVerilog HDL File  ; C:/Users/gados/141/verilog/Ctrl.sv        ;         ;
-; ../verilog/ALU.sv                         ; yes             ; User SystemVerilog HDL File  ; C:/Users/gados/141/verilog/ALU.sv         ;         ;
-; /users/gados/141/machine/machine_code.txt ; yes             ; Auto-Found File              ; /users/gados/141/machine/machine_code.txt ;         ;
-+-------------------------------------------+-----------------+------------------------------+-------------------------------------------+---------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                             ;
++------------------------------------------------------------+-----------------+------------------------------+------------------------------------------------------------+---------+
+; File Name with User-Entered Path                           ; Used in Netlist ; File Type                    ; File Name with Absolute Path                               ; Library ;
++------------------------------------------------------------+-----------------+------------------------------+------------------------------------------------------------+---------+
+; ../verilog/TopLevel.sv                                     ; yes             ; User SystemVerilog HDL File  ; C:/Users/jnvie/Documents/GitHub/141/verilog/TopLevel.sv    ;         ;
+; ../verilog/RegFile.sv                                      ; yes             ; User SystemVerilog HDL File  ; C:/Users/jnvie/Documents/GitHub/141/verilog/RegFile.sv     ;         ;
+; ../verilog/InstROM.sv                                      ; yes             ; User SystemVerilog HDL File  ; C:/Users/jnvie/Documents/GitHub/141/verilog/InstROM.sv     ;         ;
+; ../verilog/InstFetch.sv                                    ; yes             ; User SystemVerilog HDL File  ; C:/Users/jnvie/Documents/GitHub/141/verilog/InstFetch.sv   ;         ;
+; ../verilog/Definitions.sv                                  ; yes             ; User SystemVerilog HDL File  ; C:/Users/jnvie/Documents/GitHub/141/verilog/Definitions.sv ;         ;
+; ../verilog/DataMem.sv                                      ; yes             ; User SystemVerilog HDL File  ; C:/Users/jnvie/Documents/GitHub/141/verilog/DataMem.sv     ;         ;
+; ../verilog/Ctrl.sv                                         ; yes             ; User SystemVerilog HDL File  ; C:/Users/jnvie/Documents/GitHub/141/verilog/Ctrl.sv        ;         ;
+; ../verilog/ALU.sv                                          ; yes             ; User SystemVerilog HDL File  ; C:/Users/jnvie/Documents/GitHub/141/verilog/ALU.sv         ;         ;
+; /users/jnvie/documents/github/141/machine/machine_code.txt ; yes             ; Auto-Found File              ; /users/jnvie/documents/github/141/machine/machine_code.txt ;         ;
++------------------------------------------------------------+-----------------+------------------------------+------------------------------------------------------------+---------+
 
 
 +----------------------------------------------------------+
@@ -322,65 +322,66 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-------------------------------+
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
-    Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
-    Info: Processing started: Tue Aug 25 16:12:10 2020
+    Info: Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
+    Info: Processing started: Wed Aug 26 15:52:53 2020
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off TopLevel -c TopLevel
+Info: Using INI file C:/Users/jnvie/quartus.ini
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
-Info (12021): Found 1 design units, including 1 entities, in source file /users/gados/141/verilog/toplevel_tb.sv
-    Info (12023): Found entity 1: TopLevel_tb File: C:/Users/gados/141/verilog/TopLevel_tb.sv Line: 8
-Info (12021): Found 1 design units, including 1 entities, in source file /users/gados/141/verilog/toplevel.sv
-    Info (12023): Found entity 1: TopLevel File: C:/Users/gados/141/verilog/TopLevel.sv Line: 6
-Info (12021): Found 1 design units, including 1 entities, in source file /users/gados/141/verilog/regfile.sv
-    Info (12023): Found entity 1: RegFile File: C:/Users/gados/141/verilog/RegFile.sv Line: 10
-Info (12021): Found 1 design units, including 1 entities, in source file /users/gados/141/verilog/lut.sv
-    Info (12023): Found entity 1: LUT File: C:/Users/gados/141/verilog/LUT.sv Line: 6
-Info (12021): Found 1 design units, including 1 entities, in source file /users/gados/141/verilog/instrom.sv
-    Info (12023): Found entity 1: InstROM File: C:/Users/gados/141/verilog/InstROM.sv Line: 11
-Info (12021): Found 1 design units, including 1 entities, in source file /users/gados/141/verilog/instfetch.sv
-    Info (12023): Found entity 1: InstFetch File: C:/Users/gados/141/verilog/InstFetch.sv Line: 8
-Info (12021): Found 1 design units, including 0 entities, in source file /users/gados/141/verilog/definitions.sv
-    Info (12022): Found design unit 1: definitions (SystemVerilog) File: C:/Users/gados/141/verilog/Definitions.sv Line: 3
-Info (12021): Found 1 design units, including 1 entities, in source file /users/gados/141/verilog/datamem.sv
-    Info (12023): Found entity 1: DataMem File: C:/Users/gados/141/verilog/DataMem.sv Line: 6
-Info (12021): Found 1 design units, including 1 entities, in source file /users/gados/141/verilog/ctrl.sv
-    Info (12023): Found entity 1: Ctrl File: C:/Users/gados/141/verilog/Ctrl.sv Line: 6
-Info (12021): Found 1 design units, including 1 entities, in source file /users/gados/141/verilog/alu.sv
-    Info (12023): Found entity 1: ALU File: C:/Users/gados/141/verilog/ALU.sv Line: 7
-Warning (10236): Verilog HDL Implicit Net warning at TopLevel.sv(63): created implicit net for "BranchAccept" File: C:/Users/gados/141/verilog/TopLevel.sv Line: 63
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file /users/jnvie/documents/github/141/verilog/toplevel_tb.sv
+    Info (12023): Found entity 1: TopLevel_tb File: C:/Users/jnvie/Documents/GitHub/141/verilog/TopLevel_tb.sv Line: 8
+Info (12021): Found 1 design units, including 1 entities, in source file /users/jnvie/documents/github/141/verilog/toplevel.sv
+    Info (12023): Found entity 1: TopLevel File: C:/Users/jnvie/Documents/GitHub/141/verilog/TopLevel.sv Line: 6
+Info (12021): Found 1 design units, including 1 entities, in source file /users/jnvie/documents/github/141/verilog/regfile.sv
+    Info (12023): Found entity 1: RegFile File: C:/Users/jnvie/Documents/GitHub/141/verilog/RegFile.sv Line: 10
+Info (12021): Found 1 design units, including 1 entities, in source file /users/jnvie/documents/github/141/verilog/lut.sv
+    Info (12023): Found entity 1: LUT File: C:/Users/jnvie/Documents/GitHub/141/verilog/LUT.sv Line: 6
+Info (12021): Found 1 design units, including 1 entities, in source file /users/jnvie/documents/github/141/verilog/instrom.sv
+    Info (12023): Found entity 1: InstROM File: C:/Users/jnvie/Documents/GitHub/141/verilog/InstROM.sv Line: 11
+Info (12021): Found 1 design units, including 1 entities, in source file /users/jnvie/documents/github/141/verilog/instfetch.sv
+    Info (12023): Found entity 1: InstFetch File: C:/Users/jnvie/Documents/GitHub/141/verilog/InstFetch.sv Line: 8
+Info (12021): Found 1 design units, including 0 entities, in source file /users/jnvie/documents/github/141/verilog/definitions.sv
+    Info (12022): Found design unit 1: definitions (SystemVerilog) File: C:/Users/jnvie/Documents/GitHub/141/verilog/Definitions.sv Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file /users/jnvie/documents/github/141/verilog/datamem.sv
+    Info (12023): Found entity 1: DataMem File: C:/Users/jnvie/Documents/GitHub/141/verilog/DataMem.sv Line: 6
+Info (12021): Found 1 design units, including 1 entities, in source file /users/jnvie/documents/github/141/verilog/ctrl.sv
+    Info (12023): Found entity 1: Ctrl File: C:/Users/jnvie/Documents/GitHub/141/verilog/Ctrl.sv Line: 6
+Info (12021): Found 1 design units, including 1 entities, in source file /users/jnvie/documents/github/141/verilog/alu.sv
+    Info (12023): Found entity 1: ALU File: C:/Users/jnvie/Documents/GitHub/141/verilog/ALU.sv Line: 7
+Warning (10236): Verilog HDL Implicit Net warning at TopLevel.sv(63): created implicit net for "BranchAccept" File: C:/Users/jnvie/Documents/GitHub/141/verilog/TopLevel.sv Line: 63
 Info (12127): Elaborating entity "TopLevel" for the top level hierarchy
-Info (12128): Elaborating entity "InstFetch" for hierarchy "InstFetch:IF1" File: C:/Users/gados/141/verilog/TopLevel.sv Line: 44
-Warning (10230): Verilog HDL assignment warning at InstFetch.sv(29): truncated value with size 32 to match size of target (10) File: C:/Users/gados/141/verilog/InstFetch.sv Line: 29
-Info (12128): Elaborating entity "Ctrl" for hierarchy "Ctrl:Ctrl1" File: C:/Users/gados/141/verilog/TopLevel.sv Line: 66
-Warning (10036): Verilog HDL or VHDL warning at Ctrl.sv(35): object "b_opcode" assigned a value but never read File: C:/Users/gados/141/verilog/Ctrl.sv Line: 35
-Warning (10230): Verilog HDL assignment warning at Ctrl.sv(63): truncated value with size 32 to match size of target (3) File: C:/Users/gados/141/verilog/Ctrl.sv Line: 63
-Warning (10270): Verilog HDL Case Statement warning at Ctrl.sv(57): incomplete case statement has no default case item File: C:/Users/gados/141/verilog/Ctrl.sv Line: 57
-Info (12128): Elaborating entity "InstROM" for hierarchy "InstROM:IR1" File: C:/Users/gados/141/verilog/TopLevel.sv Line: 71
-Warning (10850): Verilog HDL warning at InstROM.sv(42): number of words (0) in memory file does not match the number of elements in the address range [0:1023] File: C:/Users/gados/141/verilog/InstROM.sv Line: 42
-Warning (10030): Net "inst_rom.data_a" at InstROM.sv(38) has no driver or initial value, using a default initial value '0' File: C:/Users/gados/141/verilog/InstROM.sv Line: 38
-Warning (10030): Net "inst_rom.waddr_a" at InstROM.sv(38) has no driver or initial value, using a default initial value '0' File: C:/Users/gados/141/verilog/InstROM.sv Line: 38
-Warning (10030): Net "inst_rom.we_a" at InstROM.sv(38) has no driver or initial value, using a default initial value '0' File: C:/Users/gados/141/verilog/InstROM.sv Line: 38
-Info (12128): Elaborating entity "RegFile" for hierarchy "RegFile:RF1" File: C:/Users/gados/141/verilog/TopLevel.sv Line: 86
-Info (12128): Elaborating entity "ALU" for hierarchy "ALU:ALU1" File: C:/Users/gados/141/verilog/TopLevel.sv Line: 107
-Warning (10036): Verilog HDL or VHDL warning at ALU.sv(16): object "op_mnemonic" assigned a value but never read File: C:/Users/gados/141/verilog/ALU.sv Line: 16
-Info (12128): Elaborating entity "DataMem" for hierarchy "DataMem:DM1" File: C:/Users/gados/141/verilog/TopLevel.sv Line: 116
-Warning (127007): Memory Initialization File or Hexadecimal (Intel-Format) File "C:/Users/gados/141/quartus/db/TopLevel.ram0_InstROM_15efe571.hdl.mif" contains "don't care" values -- overwriting them with 0s
+Info (12128): Elaborating entity "InstFetch" for hierarchy "InstFetch:IF1" File: C:/Users/jnvie/Documents/GitHub/141/verilog/TopLevel.sv Line: 44
+Warning (10230): Verilog HDL assignment warning at InstFetch.sv(29): truncated value with size 32 to match size of target (10) File: C:/Users/jnvie/Documents/GitHub/141/verilog/InstFetch.sv Line: 29
+Info (12128): Elaborating entity "Ctrl" for hierarchy "Ctrl:Ctrl1" File: C:/Users/jnvie/Documents/GitHub/141/verilog/TopLevel.sv Line: 66
+Warning (10036): Verilog HDL or VHDL warning at Ctrl.sv(35): object "b_opcode" assigned a value but never read File: C:/Users/jnvie/Documents/GitHub/141/verilog/Ctrl.sv Line: 35
+Warning (10230): Verilog HDL assignment warning at Ctrl.sv(63): truncated value with size 32 to match size of target (3) File: C:/Users/jnvie/Documents/GitHub/141/verilog/Ctrl.sv Line: 63
+Warning (10270): Verilog HDL Case Statement warning at Ctrl.sv(57): incomplete case statement has no default case item File: C:/Users/jnvie/Documents/GitHub/141/verilog/Ctrl.sv Line: 57
+Info (12128): Elaborating entity "InstROM" for hierarchy "InstROM:IR1" File: C:/Users/jnvie/Documents/GitHub/141/verilog/TopLevel.sv Line: 71
+Warning (10850): Verilog HDL warning at InstROM.sv(42): number of words (0) in memory file does not match the number of elements in the address range [0:1023] File: C:/Users/jnvie/Documents/GitHub/141/verilog/InstROM.sv Line: 42
+Warning (10030): Net "inst_rom.data_a" at InstROM.sv(38) has no driver or initial value, using a default initial value '0' File: C:/Users/jnvie/Documents/GitHub/141/verilog/InstROM.sv Line: 38
+Warning (10030): Net "inst_rom.waddr_a" at InstROM.sv(38) has no driver or initial value, using a default initial value '0' File: C:/Users/jnvie/Documents/GitHub/141/verilog/InstROM.sv Line: 38
+Warning (10030): Net "inst_rom.we_a" at InstROM.sv(38) has no driver or initial value, using a default initial value '0' File: C:/Users/jnvie/Documents/GitHub/141/verilog/InstROM.sv Line: 38
+Info (12128): Elaborating entity "RegFile" for hierarchy "RegFile:RF1" File: C:/Users/jnvie/Documents/GitHub/141/verilog/TopLevel.sv Line: 86
+Info (12128): Elaborating entity "ALU" for hierarchy "ALU:ALU1" File: C:/Users/jnvie/Documents/GitHub/141/verilog/TopLevel.sv Line: 107
+Warning (10036): Verilog HDL or VHDL warning at ALU.sv(16): object "op_mnemonic" assigned a value but never read File: C:/Users/jnvie/Documents/GitHub/141/verilog/ALU.sv Line: 16
+Info (12128): Elaborating entity "DataMem" for hierarchy "DataMem:DM1" File: C:/Users/jnvie/Documents/GitHub/141/verilog/TopLevel.sv Line: 116
+Warning (127007): Memory Initialization File or Hexadecimal (Intel-Format) File "C:/Users/jnvie/Documents/GitHub/141/quartus/db/TopLevel.ram0_InstROM_15efe571.hdl.mif" contains "don't care" values -- overwriting them with 0s
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "Ack" is stuck at GND File: C:/Users/gados/141/verilog/TopLevel.sv Line: 11
+    Warning (13410): Pin "Ack" is stuck at GND File: C:/Users/jnvie/Documents/GitHub/141/verilog/TopLevel.sv Line: 11
 Info (17049): 10 registers lost all their fanouts during netlist optimizations.
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
 Warning (21074): Design contains 3 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "Start" File: C:/Users/gados/141/verilog/TopLevel.sv Line: 8
-    Warning (15610): No output dependent on input pin "Reset" File: C:/Users/gados/141/verilog/TopLevel.sv Line: 7
-    Warning (15610): No output dependent on input pin "Clk" File: C:/Users/gados/141/verilog/TopLevel.sv Line: 9
+    Warning (15610): No output dependent on input pin "Start" File: C:/Users/jnvie/Documents/GitHub/141/verilog/TopLevel.sv Line: 8
+    Warning (15610): No output dependent on input pin "Reset" File: C:/Users/jnvie/Documents/GitHub/141/verilog/TopLevel.sv Line: 7
+    Warning (15610): No output dependent on input pin "Clk" File: C:/Users/jnvie/Documents/GitHub/141/verilog/TopLevel.sv Line: 9
 Info (21057): Implemented 4 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 3 input pins
     Info (21059): Implemented 1 output pins
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 18 warnings
-    Info: Peak virtual memory: 4813 megabytes
-    Info: Processing ended: Tue Aug 25 16:12:21 2020
-    Info: Elapsed time: 00:00:11
-    Info: Total CPU time (on all processors): 00:00:22
+    Info: Peak virtual memory: 4798 megabytes
+    Info: Processing ended: Wed Aug 26 15:53:03 2020
+    Info: Elapsed time: 00:00:10
+    Info: Total CPU time (on all processors): 00:00:19
 
 

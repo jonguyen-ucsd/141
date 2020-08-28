@@ -8,7 +8,7 @@ with open(sys.argv[1], 'r') as f:
       lines.append(line.split('@')[0].split())
 print(lines)
 
-output = open(sys.argv[2], 'wb')
+output = open(sys.argv[2], 'w')
 r = {"r0" : "0000", # registers
      "r1" : "0001",
      "r2" : "0010",
@@ -30,7 +30,7 @@ ar = {"r0" : "0", # arithmetic registers
       "r1" : "1" 
 }
 
-for line in lines:
+for i, line in enumerate(lines):
   code = ""
   if len(line) > 1:
     arg = line[0]
@@ -108,4 +108,8 @@ for line in lines:
 
     if arg == "define":
       r[line[1]] = r[line[2]] # set alias
-  print(code)
+    elif i != (len(lines) - 1):
+      output.write(code.strip('') + '\n')
+    else:
+      output.write(code.strip(''))
+output.close()
