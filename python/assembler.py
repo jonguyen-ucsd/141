@@ -6,9 +6,10 @@ lines = []
 with open(sys.argv[1], 'r') as f:
   for line in f:
       lines.append(line.split('@')[0].split())
-print(lines)
+# print(lines)
 
 output = open(sys.argv[2], 'w')
+out = ""
 r = {"r0" : "0000", # registers
      "r1" : "0001",
      "r2" : "0010",
@@ -30,7 +31,20 @@ ar = {"r0" : "0", # arithmetic registers
       "r1" : "1" 
 }
 
-for i, line in enumerate(lines):
+label = dict()
+labelIndex = 0
+PC = 0
+for line in lines: # populate label indexes
+  if len(line) > 0:
+    arg = line[0]
+    # print(arg)
+    if ':' in arg: # for label indexing
+        l = arg.split(":")[0]
+        label[l] = labelIndex
+        labelIndex += 1
+# print('labels:',label)
+
+for line in lines: # build instructions
   code = ""
   if len(line) > 1:
     arg = line[0]
@@ -93,23 +107,25 @@ for i, line in enumerate(lines):
     if arg == "b":
       code = "11"         # instruction type
       code += "00"        # op-code
-      
+      code += "{0:05b}".format(label[line[1]]) 
     if arg == "beq":
       code = "11"         # instruction type
       code += "01"        # op-code
-
+      code += "{0:05b}".format(label[line[1]])
     if arg == "blt":
       code = "11"         # instruction type
       code += "10"        # op-code
-
+      code += "{0:05b}".format(label[line[1]])
     if arg == "ble":
       code = "11"         # instruction type
       code += "11"        # op-code
-
+      code += "{0:05b}".format(label[line[1]])
     if arg == "define":
       r[line[1]] = r[line[2]] # set alias
-    elif i != (len(lines) - 1):
-      output.write(code.strip('') + '\n')
     else:
-      output.write(code.strip(''))
+      PC += 1
+      out += code.strip('') + '\n'
+  elif len(line) > 0 and ':' in line[0]:
+    print(line, PC)
+output.write(out[0:-1])
 output.close()
