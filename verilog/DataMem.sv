@@ -5,7 +5,7 @@
 // CSE141L
 module DataMem(
   input              Clk,
-                     Reset,
+  //                   Reset,
                      MemWrite,
   input [7:0]        DataAddress,   // 8-bit-wide pointer to 256-deep memory
                      DataIn,		// 8-bit-wide data path, also
@@ -25,14 +25,14 @@ module DataMem(
   if you do not need to preload your data memory with any constants, you may omit the if(Reset) and the else,
   and go straight to if(WriteEn) ...
 */
-    if(Reset) begin
-// you may initialize your memory w/ constants, if you wish
-      for(int i=0;i<256;i++)
-	    Core[i] <= 0;
-      Core[ 16] <= 254;          // overrides the 0  ***sample only***
-      Core[244] <= 5;			 //    likewise
-	end
-    else if(MemWrite) 
+//     if(Reset) begin
+// // you may initialize your memory w/ constants, if you wish
+//       for(int i=0;i<256;i++)
+// 	    Core[i] <= 0;
+//       Core[ 16] <= 254;          // overrides the 0  ***sample only***
+//       Core[244] <= 5;			 //    likewise
+// 	end
+    if(MemWrite) // was else if before
       Core[DataAddress] <= DataIn;
 
 endmodule

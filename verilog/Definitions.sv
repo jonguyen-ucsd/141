@@ -41,8 +41,12 @@ package definitions;
   typedef enum {
     mcBAL = 0,
     mcBEQ = 1,
-    mcBLT = 2,
-    mcBLE = 3
+    mcBNE = 2,
+    mcBLT = 3,
+    mcBLE = 4,
+    mcBGT = 5,
+    mcBGE = 6,
+    mcFML = 7
   } B_opcodes;
 
 // enum names will appear in timing diagram

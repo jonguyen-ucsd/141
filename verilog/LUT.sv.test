@@ -1,0 +1,13 @@
+module LUT(
+  input       [ 3:0] label_index,
+  output logic[ 9:0] Target
+  );
+always_comb
+  case(label_index)
+    4'd0:    Target = 10'd81;
+    4'd1:    Target = 10'd90;
+    4'd2:    Target = 10'd135;
+    4'd3:    Target = 10'd142;
+    default: Target = 10'142;
+  endcase
+endmodule
