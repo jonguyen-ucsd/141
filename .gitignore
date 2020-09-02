@@ -1,0 +1,9 @@
+modelsim/w*
+modelsim/*.mpf
+modelsim/*.mti
+modelsim/v*
+modelsim/*.txt
+
+machine/*
+
+quartus/*
