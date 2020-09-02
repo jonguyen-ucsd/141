@@ -12,6 +12,7 @@ lut = open("../verilog/LUT.sv", "w")
 lut.write("module LUT(\n  input       [ 3:0] label_index,\n  output logic[ 9:0] Target\n  );\nalways_comb\n  case(label_index)\n")
 lastInst = 0
 output = open(sys.argv[2], 'w')
+commented = open("../machine/commented.txt", "w")
 out = ""
 r = {"r0" : "0000", # registers
      "r1" : "0001",
@@ -145,6 +146,7 @@ for i, line in enumerate(lines): # build instructions
     else:
       PC += 1
       out += code.strip('') + '\n'
+      commented.write(code.strip('') + str(line) + '\n')
   elif len(line) > 0 and ':' in line[0]:
     # print(line, "label number:", labelNum, "line:", PC)
     lut.write("    4'd" + str(labelNum) + ":    Target = 10'd" + str(PC) + ";\n")
@@ -153,6 +155,7 @@ for i, line in enumerate(lines): # build instructions
   print(i+1, ":", line, "instruction code:", code, "PC:", PC)
 output.write(out[0:-1])
 output.close()
+commented.close()
 lut.write("    default: Target = 10'd" + str(lastInst) + ";\n  endcase\nendmodule")
 lut.close()
 print("last line is:", PC)
