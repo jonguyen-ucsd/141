@@ -21,8 +21,8 @@ module encrypt_tb ()        ;
 //  restricted to characters between space (0x20) and script f (0x9f) and shorter than 
 //  53 characters in length
 //string     str1  = "Mr. Watson, come here. I want to see you.";     // sample program 1 input
-//  string     str1  = " Knowledge comes, but wisdom lingers.    ";   // alternative inputs
-string str1 = " 0000    1111    2222    3333    4444    5555 ";
+  string     str1  = " Knowledge comes, but wisdom lingers.    ";   // alternative inputs
+// string str1 = " 0000    1111    2222    3333    4444    5555 ";
 //string     str1  = "  01234546789abcdefghijklmnopqrstuvwxyz. ";   //   (make up your own,
 //  string     str1  = "  f       A joke is a very serious thing.";   // 	as well)
 //  string     str1  = "                           Ajok          ";   // 

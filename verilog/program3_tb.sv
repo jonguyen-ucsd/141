@@ -59,7 +59,7 @@ module decrypt_depad_tb ()        ;
 
 // set preamble lengths for the program  (always > 9 but < 16)
   always_comb begin
-    pre_length = $random>>10 ;             // program 1 run
+    pre_length = 10 ;             // program 1 run
     if(pre_length < 10) pre_length = 10;   // prevents pre_length < 10
   end
 
